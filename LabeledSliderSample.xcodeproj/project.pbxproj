@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		6B784B5925441E57002586AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B784B5725441E57002586AA /* Main.storyboard */; };
 		6B784B5B25441E58002586AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B784B5A25441E58002586AA /* Assets.xcassets */; };
 		6B784B5E25441E58002586AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B784B5C25441E58002586AA /* LaunchScreen.storyboard */; };
+		6B784B6925441F33002586AA /* ReactiveCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 6B784B6825441F33002586AA /* ReactiveCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B784B6925441F33002586AA /* ReactiveCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = LabeledSliderSample;
+			packageProductDependencies = (
+				6B784B6825441F33002586AA /* ReactiveCocoa */,
+			);
 			productName = LabeledSliderSample;
 			productReference = 6B784B4E25441E57002586AA /* LabeledSliderSample.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 6B784B4525441E57002586AA;
+			packageReferences = (
+				6B784B6725441F33002586AA /* XCRemoteSwiftPackageReference "ReactiveCocoa" */,
+			);
 			productRefGroup = 6B784B4F25441E57002586AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -343,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B784B6725441F33002586AA /* XCRemoteSwiftPackageReference "ReactiveCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveCocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B784B6825441F33002586AA /* ReactiveCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B784B6725441F33002586AA /* XCRemoteSwiftPackageReference "ReactiveCocoa" */;
+			productName = ReactiveCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6B784B4625441E57002586AA /* Project object */;
 }
